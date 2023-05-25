@@ -7,7 +7,7 @@ body {
     Arial, sans-serif;
   overflow-x: hidden;
   margin: 0;
-  background-color: #e7e7e7;
+  background-color: #c9d8b1fb;
 }
 
 #header-nav {
@@ -17,7 +17,7 @@ body {
 
 #header-nav-bound {
   margin: auto;
-  max-width: 1220px;
+  max-width: 500px;
 }
 
 nav {
