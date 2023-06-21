@@ -8,750 +8,706 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/recien.css">
     <link rel="stylesheet" href="./css/pagina.css">
+    <link rel="stylesheet" href="./css/pagi.css">
     <meta name="viewport" content="width=device-width, user-scalable-no, initial-scale-1.0, maximum-scale=1.0, minimum-scale=1.0">
-</head>
-    <body>
-        <header>
-          <div id="header-nav">
-            <div id="header-nav-bound">
-              <nav id="nav-top">
-                <a id="nav-logo" href="#"></a>
-                <form id="nav-search" action="https://www.google.com/?hl=es" method="get">
-                  <input id="nav-search-input" type="text" name="as_word" placeholder="Buscar productos, marcas y más…" />
-                  <button type="submit" id="nav-search-btn">
-                    <i id="nav-search-icon" class="fa fa-search"></i>
-                  </button>
-                </form>
-                <a id="mercado-puntos" href="#">
-                  <img id="mercado-puntos-img" src="https://cdn-icons-png.flaticon.com/512/76/76824.png" alt="" />
-                </a>
-              </nav>
-              <nav id="nav-bottom" class="nav">
-                <a id="direc" href="#">
-                  <i id="direc-icon" class="fal fa-map-marker-alt fa-2x"></i>
-                  <div id="direc-data">
-                    <img id="mercado-puntos-img" src="https://i.pinimg.com/564x/0a/9a/91/0a9a914270def4f8c41d5fc99e48e3f2.jpg" alt="" />
-                    <div id="direc-loc">MOCTEZUMA</div>
-                  </div>
-                </a>
-                <div id="sections">
-                  <a class="section" id="categorias" href="http://www.bing.com">
-                    <object id="categ-dropdown">
-                      Categorías
-                      <i class="dropdown-icon fal fa-caret-down"></i>
-                      <object id="categ-dropdown-cont">
-                        <a href="http://www.google.com">Vehículos</a>
-                        <a href="http://www.yahoo.com">Inmuebles</a>
-                        <a href="http://www.twitter.com">Tecnología</a>
-                      </object>
-                    </object>
-                  </a>
-                  <a class="section" id="ofertas" href="#">Ofertas</a>
-                  <a class="section" id="historial" href="#">Historial</a>
-                  <a class="section" id="super" href="#">Supermercado</a>
-                  <a class="section" id="Juguetes" href="#">Juguetes</a>
-                  <a class="section" id="vender" href="#">Vender</a>
-                  <a class="section" id="ayuda" href="#">Ayuda</a>
-                </div>
-                <div id="user">
-                  <a class="user-element" id="user-info" href="#">
-                    <object id="user-dropdown">
-                      <i id="user-icon" class="element-icon fal fa-user-circle"></i>
-                      <span>Test</span>
-                      <i class="dropdown-icon fal fa-caret-down"></i>
-                      <object id="user-dropdown-cont">
-                        <a class="only-mobile" href="http://www.google.com">Mis compras</a>
-                        <a class="only-mobile" href="http://www.google.com">Favoritos</a>
-                        <div class="separator empty only-mobile">
-                        </div>
-                        <a href="http://www.google.com">Compras</a>
-                        <a href="http://www.yahoo.com">Preguntas</a>
-                        <div class="separator">
-                          <object>
-                            <a id="separator-cont" href="">Peliculas y series</a>
-                          </object>
-                        </div>
-                        <a href="">Mis datos</a>
-                        <a href="">Seguridad</a>
-                        <a href="">Privacidad</a>
-                        <div class="separator">
-                          <object>
-                            <a id="separator-cont" href="">Vender</a>
-                          </object>
-                        </div>
-                        <a href="">Salir</a>
-                      </object>
-                    </object>
-                  </a>
-                  <a class="user-element only-pc" id="user-compras" href="#">Mis compras</a>
-                  <a class="user-element only-pc" id="favs" href="#">Favoritos</a>
-                  <a class="user-element" id="notif" href="#">
-                    <i id="notif-icon" class="element-icon fal fa-bell"></i>
-                  </a>
-                  <a class="user-element" id="carrito" href="#">
-                    <i id="carrito-icon" class="element-icon fal fa-shopping-cart"></i>
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header>
-        <div class="slider">
-          <div class="slides">
-            <div id="slide-1">
-              <img class="slider-img" src="https://i.pinimg.com/564x/24/f0/53/24f0532da2a988b3e8e6363e98ef2bcd.jpg" alt="" />
-            </div>
-            <div id="slide-2">
-              <img class="slider-img" src="https://i.pinimg.com/564x/72/29/18/722918c657c5eb5857ffb6e57b3aade5.jpg" alt="" />
-            </div>
-            <div id="slide-3">
-              <img class="slider-img" src="https://i.pinimg.com/564x/3c/37/7a/3c377a7d133a0b3b358e9110d279d88a.jpg" alt="" />
-            </div>
-            <div id="slide-4">
-              <img class="slider-img" src="https://i.pinimg.com/564x/3f/fa/c3/3ffac3076a7813315284b8cf1435cd44.jpg" alt="" />
-            </div>
-          </div>
-          <a class="slider-a current"></a>
-          <a class="slider-a"></a>
-          <a class="slider-a"></a>
-          <a class="slider-a"></a>
-          <a class="move move-left" onclick="moveToLastBtn()"><</a>
-          <a class="move move-right" onclick="moveToNextBtn()">></a>
-        </div>
-        <main>
-          <h2 class="title">¡Aprovechá estos descuentazos!</h2>
-          <div class="descuentazos">
-            <a href="#">
-              <div class="descuentazos-item">
-                <div class="descuentazos-cont">
-                  <img class="descuentazos-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <h3 class="descuentazos-title">DESCUENTAZOS</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="descuentazos-item">
-                <div class="descuentazos-cont">
-                  <img class="descuentazos-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <h3 class="descuentazos-title">DESCUENTAZOS</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="descuentazos-item">
-                <div class="descuentazos-cont">
-                  <img class="descuentazos-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <h3 class="descuentazos-title">OFERTAS </h3>
-              </div>
-            </a>
-            <a></a>
-            <a href="#">
-              <div class="descuentazos-item">
-                <div class="descuentazos-cont">
-                  <img class="descuentazos-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <h3 class="descuentazos-title">DESCUENTOS</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="descuentazos-item">
-                <div class="descuentazos-cont">
-                  <img class="descuentazos-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <h3 class="descuentazos-title">DESCUENTOS</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="descuentazos-item">
-                <div class="descuentazos-cont">
-                  <img class="descuentazos-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <h3 class="descuentazos-title">DESCUENTOS</h3>
-              </div>
-            </a>
-          </div>
-          <div class="ofertas-grid" id="ofertas-grid-1">
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Golum marca sideshow</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-medium-size">
-              <a href="">
-                <div class="element-m-cont">
-                  <img class="element-m-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span class="pre-title">Hasta</span>
-                    <h3 class="title">30% off</h3>
-                    <h4 class="subtitle">Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-medium-size">
-              <a href="">
-                <div class="element-m-cont">
-                  <img class="element-m-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-medium-size">
-              <a href="">
-                <div class="element-m-cont">
-                  <img class="element-m-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <span>Hasta</span>
-                    <h3>30% off</h3>
-                    <h4>Juguetes</h4>
-                    <p>Ver ofertas</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <h2 class="title">COLECCIONES DE JUGUETES ANTIGUOS </h2>
-          <div class="ofertas-grid" id="ofertas-grid-2">
-            <div class="oferta-element semi-banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element semi-banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <h2 class="title">¡JUGUESTES A TU GUSTO!</h2>
-          <div class="ofertas-grid" id="ofertas-grid-3">
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-medium-size">
-              <a href="">
-                <div class="element-m-cont">
-                  <img class="element-m-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4 class="subtitle">JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-medium-size">
-              <a href="">
-                <div class="element-m-cont">
-                  <img class="element-m-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4 class="subtitle">JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-medium-size">
-              <a href="">
-                <div class="element-m-cont">
-                  <img class="element-m-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4 class="subtitle">JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element semi-banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element semi-banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element semi-banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="/https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element semi-banner">
-              <a href="">
-                <div class="element-banner-cont">
-                  <img class="element-banner-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size extended-element">
-              <a href="">
-                <div class="element-s-cont extended-cont">
-                  <img class="element-s-img extended-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size extended-element">
-              <a href="">
-                <div class="element-s-cont extended-cont">
-                  <img class="element-s-img extended-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="oferta-element element-small-size">
-              <a href="">
-                <div class="element-s-cont">
-                  <img class="element-s-img" src="https://i.pinimg.com/564x/c8/d7/ed/c8d7edc50dfe4500583d556adcde3740.jpg" alt="" />
-                </div>
-                <div>
-                  <div>
-                    <h4>JUGUETES</h4>
-                    <p>Especialidad</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <a class="link-btn-wrapper" href="#">
-            <button class="link-btn">Ver más</button>
-          </a>
-          <div class="side-note-wrapper">
-            <div class="side-note">
-                Queremos agradecerte inmensamente por la confianza en nuestros productos! 
-                Esperamos que estés súper contento con tu compra, tal como lo estamos nosotros.
-                ¡No solo eso, esperamos que hagas un buen uso de tu [PRODUCTO] y que el mismo supere todas tus
-                 expectativas! Lo recomendamos especialmente para [FUNCIONES DEL PRODUCTO].
-                 Si puedes, comparte comentarios sobre el producto, nos será de gran ayuda para entender cómo lo estás 
-                 disfrutando mejor y, si hay algún punto de mejora que podamos aprovechar para mejorar aún más.
-                Y, por supuesto, si necesitas ayuda, ¡siempre estamos disponibles!
-                Un gran abrazo.
-            </div>
-          </div>
-        </main>
-        <div class="extra-links">
-          <div class="extra-links-switch">
-            <div class="mas-info">
-              <span class="mas-info-span"> Más información </span>
-              <i class="fas fa-chevron-down mas-info-icon"></i>
-            </div>
-          </div>
-          <div class="extra-links-cont">
-            <div class="extra-links-col">
-              <div class="extra-links-col-title">Acerca de</div>
-              <a href="#">
-                <div class="extra-links-col-link">Juguetes</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Juguetes</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Tendencias</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Sustentabilidad</div>
-              </a>
-            </div>
-            <div class="extra-links-col">
-              <div class="extra-links-col-title">Otros sitios</div>
-              <a href="#">
-                <div class="extra-links-col-link">Developers</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Juguetes</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Juguetes</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Envios nacionales </div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Juguetes</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Juguetes</div>
-              </a>
-            </div>
-            <div class="extra-links-col">
-              <div class="extra-links-col-title">Ayuda</div>
-              <a href="#">
-                <div class="extra-links-col-link">Compra</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Vender</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Resolución de problemas</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Centro de seguridad</div>
-              </a>
-            </div>
-            <div class="extra-links-col">
-              <div class="extra-links-col-title">Redes sociales</div>
-              <a href="#">
-                <div class="extra-links-col-link">Twitter</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Facebook</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Instagram</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Telegram</div>
-              </a>
-            </div>
-            <div class="extra-links-col">
-              <div class="extra-links-col-title">Mi cuenta</div>
-              <a href="#">
-                <div class="extra-links-col-link">Resumen</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Favoritos</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Vender</div>
-              </a>
-            </div>
-            <div class="extra-links-col">
-              <div class="extra-links-col-title">Paises</div>
-              <a href="#">
-                <div class="extra-links-col-link">Japón</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">China</div>
-              </a>
-              <a href="#">
-                <div class="extra-links-col-link">Europa</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <footer>
-          <div class="footer-link-wrapper">
-            <div class="footer-link">Tienda Online </div>
-            <div class="footer-link">Términos y condiciones</div>
-            <div class="footer-link">Privacidad</div>
-            <div class="footer-link">Usuario</div>
-            <div class="footer-link">Ayuda</div>
-            <div class="footer-link">Consumidor</div>
-          </div>
+  </head>
+  <body>
 
+
+  
+    <header class="main-header">
+      <div class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__title">MOCTEZUMA</h1>
+          <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+              <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+              <li class="menu__item"><a href="" class="menu__link">JUGUETES</a></li>
+              <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+              <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__container">
+          <span class="main-header__txt">Need Help</span>
+          <p class="main-header__txt"><i class="fas fa-phone"></i> Call +502 33097421</p>
+        </div>
+        <div class="main-header__container">
+          <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+          <a href="" class="main-header__btn">My cart <i class="fas fa-shopping-cart"></i></a>
+          <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+        </div>
+      </div>
+    </header>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="https://i.pinimg.com/564x/5a/e9/3d/5ae93de4cd2aa5647f9f18213bbecc6c.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+            
           </div>
-        </footer>
+        </div>
+        <div class="slider__section">
+          <img src="https://e0.pxfuel.com/wallpapers/745/797/desktop-wallpaper-toy-vintage-robot.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="https://s1.1zoom.me/big0/900/Closeup_Toys_Retro_Bus_448332.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="https://i.pinimg.com/564x/7a/b8/95/7ab8953c6273433673824de9700968ec.jpg" alt="" class="slider__img">
+          <div class="slider__content">
+          </div>
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+    <main class="main">
+      <div class="container">
+        <h2 class="main-title">Nuevos productos </h2>
+        <section class="container-products">
+          <div class="product">
+            <img src="https://i.pinimg.com/564x/5a/f6/d5/5af6d59d0da8602b30de4babbc4feb04.jpg" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Juguete Topo Giggio</h3>
+              <span class="product__price">$100.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="https://i.pinimg.com/564x/e6/cc/f6/e6ccf6104d390845f2b6c5ece00ee276.jpg" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Los Thundercats</h3>
+              <span class="product__price">$575.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="https://i.pinimg.com/564x/f3/24/cb/f324cbe1f1efeff6c33b32c24527f4b5.jpg" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Power Rangers.</h3>
+              <span class="product__price">$500.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="https://i.pinimg.com/564x/82/c2/d0/82c2d07b9805e5f02d9d0e3cd0d86b34.jpg" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Muppet Babies</h3>
+              <span class="product__price">$ 100.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+        </section>
+        <section class="container__testimonials">
+          <h2 class="section__title">PRODUCTOS</h2>
+          <h3 class="testimonial__title">COMPRAS </h3>
+          <p class="testimonial__txt">«Los clientes satisfechos son tus mejores promotores y pueden convertirse en tu equipo de ventas más exitoso»<p>
+        </section>
+      
+        <div class="container-editor">
+          <div class="editor__item">
+            <img src="https://i.pinimg.com/564x/de/8a/80/de8a80da662a30cfe45f57bfe9cb1204.jpg" alt="" class="editor__img">
+            <p class="editor__circle">El cliente siempre tiene la razón</p>
+          </div>
+          <div class="editor__item">
+            <img src="https://i.pinimg.com/564x/09/93/6c/09936c032fae8ee772bef596fc39e891.jpg" alt="" class="editor__img">
+            <p class="editor__circle">Estamos para servirle</p>
+          </div>
+        </div>
+
+
+
+      </head>
+        <body>
+
+        </body>
+<section>
+
+
+  <main>
+    <h2 class="title">¡Aprovechá estos nuevos Descuntos!</h2>
+    <div class="descuentazos">
+      <a href="#">
+        <div class="descuentazos-item">
+          <div class="descuentazos-cont">
+            <img class="descuentazos-img" src="https://i.pinimg.com/564x/dc/aa/1c/dcaa1c799885646c2b126f08b06c2f8c.jpg" alt="" />
+          </div>
+          <h3 class="descuentazos-title">C</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="descuentazos-item">
+          <div class="descuentazos-cont">
+            <img class="descuentazos-img" src="https://i.pinimg.com/564x/2b/9d/da/2b9dda2868caff61941d29ec2756928c.jpg" alt="" />
+          </div>
+          <h3 class="descuentazos-title">O</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="descuentazos-item">
+          <div class="descuentazos-cont">
+            <img class="descuentazos-img" src="https://i.pinimg.com/564x/dc/aa/1c/dcaa1c799885646c2b126f08b06c2f8c.jpg" alt="" />
+          </div>
+          <h3 class="descuentazos-title">M </h3>
+        </div>
+      </a>
+      <a></a>
+      <a href="#">
+        <div class="descuentazos-item">
+          <div class="descuentazos-cont">
+            <img class="descuentazos-img" src="https://i.pinimg.com/564x/2b/9d/da/2b9dda2868caff61941d29ec2756928c.jpg" alt="" />
+          </div>
+          <h3 class="descuentazos-title">P</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="descuentazos-item">
+          <div class="descuentazos-cont">
+            <img class="descuentazos-img" src="https://i.pinimg.com/564x/dc/aa/1c/dcaa1c799885646c2b126f08b06c2f8c.jpg" alt="" />
+          </div>
+          <h3 class="descuentazos-title">R</h3>
+        </div>
+      </a>
+      <a href="#">
+        <div class="descuentazos-item">
+          <div class="descuentazos-cont">
+            <img class="descuentazos-img" src="https://i.pinimg.com/564x/2b/9d/da/2b9dda2868caff61941d29ec2756928c.jpg" alt="" />
+          </div>
+          <h3 class="descuentazos-title">A</h3>
+        </div>
+      </a>
+    </div>
+    <div class="ofertas-grid" id="ofertas-grid-1">
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.pinimg.com/564x/1c/96/25/1c9625ffc8b0d9cb0ec88b78a0d3f25f.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Tapitas de la liga de la justicia</span>
+              <h3>15% off</h3>
+              <p>Descuento</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://cdn-bghaa.nitrocdn.com/CglVFhJZGFCaMGDApTYZJRcUfwujqzHH/assets/static/optimized/rev-a1e7a68/wp-content/uploads/2021/01/bebe-sinclair.png" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Baby Sinclair</span>
+              <h3>20% off</h3>
+              <h4>PELUCHE</h4>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-medium-size">
+        <a href="">
+          <div class="element-m-cont">
+            <img class="element-m-img" src="https://s2.abcstatics.com/media/espana/2019/09/07/Mercedes450Rico-kW4E--620x349@abc.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span class="pre-title">MERCEDES-BENZ 450 SEL (W116) 1975</span>
+              <h3 class="title">5% off</h3>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.pinimg.com/originals/c2/e0/80/c2e080ee36fced2d0d3376da99f079f9.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Los ositos cariñositos</span>
+              <h3>20% off</h3>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://cloud10.todocoleccion.online/juguetes-antiguos-juegos-coleccion/tc/2023/05/18/17/411562379.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Mini pistola</span>
+              <h3>10% off</h3>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-medium-size">
+        <a href="">
+          <div class="element-m-cont">
+            <img class="element-m-img" src="http://www.nacionjuguetes.com/wp-content/uploads/2019/04/Super7-MOTU-vintage3-1024x381.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>He-Man Japanese Box y Skeletor Japanese Box.</span>
+              <h3>30% off</h3>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-medium-size">
+        <a href="">
+          <div class="element-m-cont">
+            <img class="element-m-img" src="https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2018/04/09/674631.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Tortuga Ninja</span>
+              <h3>10% off</h3>
+              <h4>Juguetes</h4>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/6358081/r/il/dfaae5/3155473977/il_fullxfull.3155473977_p4bw.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Pica Piedra</span>
+              <h3>50% off</h3>
+              <h4>Peluches</h4>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/37171971/r/il/7a6cdb/5060351817/il_1140xN.5060351817_p9y8.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <span>Rompecabezas Candy Candy - Candy y Terrence.</span>
+              <h3>5% off</h3>
+              <h4>Rompecabezas</h4>
+              <p>Ver ofertas</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.pinimg.com/564x/27/ba/cc/27bacc3d68b89309e563450ed7d758d7.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+    <h2 class="title">COLECCIONES DE JUGUETES ANTIGUOS </h2>
+    <div class="ofertas-grid" id="ofertas-grid-2">
+      <div class="oferta-element semi-banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.ytimg.com/vi/qh_-v4fz7M0/maxresdefault.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element semi-banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.ytimg.com/vi/UTzltRjHc4k/maxresdefault.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.pinimg.com/736x/2e/ea/c0/2eeac02586ec173d883306708cbab497.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+    <h2 class="title">MAS JUGUETES !!!</h2>
+    <div class="ofertas-grid" id="ofertas-grid-3">
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/31616279/r/il/67fef8/4636077490/il_1140xN.4636077490_qhxm.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Poco stock</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/36810481/r/il/1ae1ab/5045766359/il_1140xN.5045766359_n39u.jpg " alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Bebés Knickerbocker</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-medium-size">
+        <a href="">
+          <div class="element-m-cont">
+            <img class="element-m-img" src="https://i.etsystatic.com/18018490/r/il/5bb6ec/5003418848/il_1140xN.5003418848_rk1f.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4 class="subtitle">Twinkle Light Barbie</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/16999146/r/il/bd8536/4714799935/il_1140xN.4714799935_rm6o.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Tortuga encubierta 1990</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/23577067/r/il/5955cf/4670196302/il_1140xN.4670196302_1c85.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>mono de peluche vintage de los años 90 de Ty Toys</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-medium-size">
+        <a href="">
+          <div class="element-m-cont">
+            <img class="element-m-img" src="https://i.etsystatic.com/36179609/r/il/0b3f40/4966815185/il_1140xN.4966815185_201r.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4 class="subtitle">robot de papel maché</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/33175547/r/il/d7c7e5/3882553736/il_794xN.3882553736_3l3a.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Vintage Joker Finger Grabber</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/18445460/r/il/261f44/2593003405/il_794xN.2593003405_7qj1.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Perro de boxeo</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/25302541/r/il/5b218f/4354007130/il_794xN.4354007130_noxe.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Tin Toys</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/7293889/r/il/8ca1c4/3757804221/il_794xN.3757804221_9bxn.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>JUGUETES</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-medium-size">
+        <a href="">
+          <div class="element-m-cont">
+            <img class="element-m-img" src="https://i.etsystatic.com/15363173/r/il/33980d/4552632222/il_794xN.4552632222_sv1s.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4 class="subtitle">PICE</h4>
+              <p>Muñeca japonesa en porcelana</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/25302541/r/il/ee785b/3811820498/il_794xN.3811820498_e3c7.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Juguetes de hojalata</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/31619984/r/il/3cab69/4999908168/il_794xN.4999908168_hi2b.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Gato giratorio </h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/24843208/r/il/8a9d74/3090620573/il_794xN.3090620573_l0me.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Saltamontes</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/17198385/r/il/f7b339/4888323226/il_794xN.4888323226_r5c1.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4> Juguete de hojalata</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.pinimg.com/564x/ec/6a/8b/ec6a8b994aece823c51f15048a8a0ee6.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element semi-banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.etsystatic.com/15004412/r/il/f4dc2b/3882999714/il_1140xN.3882999714_l10e.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element semi-banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.etsystatic.com/26109767/r/il/4576cb/3126596094/il_794xN.3126596094_gdly.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element semi-banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.etsystatic.com/12045559/r/il/cb50c9/4273112499/il_794xN.4273112499_2fzs.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element semi-banner">
+        <a href="">
+          <div class="element-banner-cont">
+            <img class="element-banner-img" src="https://i.etsystatic.com/31748275/r/il/e0198d/4529865333/il_794xN.4529865333_6k3e.jpg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size extended-element">
+        <a href="">
+          <div class="element-s-cont extended-cont">
+            <img class="element-s-img extended-img" src="https://i.etsystatic.com/18445460/r/il/810ab1/5009838100/il_794xN.5009838100_fs1l.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4> Coche de policía</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/21400265/r/il/a42350/3669075263/il_794xN.3669075263_7sjl.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Deportivo Cadillac tipo 1950 japón</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size extended-element">
+        <a href="">
+          <div class="element-s-cont extended-cont">
+            <img class="element-s-img extended-img" src="https://i.etsystatic.com/37176240/r/il/4a8d25/4977754652/il_794xN.4977754652_hz40.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>Giant Zathura Robot</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="oferta-element element-small-size">
+        <a href="">
+          <div class="element-s-cont">
+            <img class="element-s-img" src="https://i.etsystatic.com/31945761/r/il/f89335/3501955172/il_794xN.3501955172_92ve.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h4>BAILARÍN DE GAP</h4>
+              <p>Especialidad</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+   
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="cards">
+  <div class="container">
+    <div class="contenedorCards"></div>
+  </div>
+</section>
+
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer__section">
+        <h2 class="footer__title">About Us</h2>
+        <p class="footer__txt> la vida es una aventura, atrévete </p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Location :</h2>
+        <p class="footer__txt">Guatemala, Guatemala</p>
+        <h2 class="footer__title">Contact</h2>
+        <p class="footer__txt">Phone : +502 33097421</p>
+        <p class="footer__txt">Email : moctezuma2@gmail.com</p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title"> Links</h2>
+        <a href="" class="footer__link">Home</a>
+        <a href="" class="footer__link">About</a>
+        <a href="" class="footer__link">Error</a>
+        <a href="" class="footer__link">Shop</a>
+        <a href="" class="footer__link">Contact Us</a>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Sign up for your offers</h2>
+        <p class="footer__txt">Subcribete a nuestras paginas y redes sociales </p>
+        <input type="email" class="footer__input" placeholder="Enter your email">
+      </div>
+      <p class="copy">© 2023 Google. Moctezuma | Tiena online</p>
+    </footer>
+    
+  
+  
+  
+  
+    
+
+
         <script src="./js/main.js"></script>
+        <script src="./js/slide.js"></script>
       </body>
 </html>

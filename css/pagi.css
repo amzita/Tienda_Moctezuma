@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
+      Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #c9d8b1fb;
+  }
+  
+  #header-nav {
+    width: 100%;
+    background-color: #fff159;
+  }
+  
+  #header-nav-bound {
+    margin: auto;
+    max-width: 1500%;
+  }
+  
+  nav {
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #nav-logo {
+    width: 134px;
+    height: 34px;
+    background-image: url("https://www.automatas.duckdns.org/portfolio/clonml/img/logo__large_plus.png");
+    background-repeat: no-repeat;
+    flex: 2;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav + nav {
+    margin-top: -10px;
+  }
+  
+  .section + .section {
+    margin-left: 10px;
+  }
+  
+  #mercado-puntos {
+    flex: 3;
+  }
+  
+  #mercado-puntos-img {
+    max-width: 340px;
+    max-height: 39px;
+  }
+  
+  #nav-search {
+    background-color: white;
+    flex: 5;
+    display: flex;
+    max-width: 800px;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 1px -2px black;
+  }
+  
+  #nav-search-input {
+    padding: 0 15px 0 15px;
+    border: none;
+    flex: 1;
+  }
+  
+  #nav-search-input::placeholder {
+    font-style: bold;
+    font-size: 1.2em;
+    color: lightgray;
+  }
+  
+  #nav-search-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+  }
+  
+  #nav-search-btn:before {
+    content: "";
+    padding: 8px;
+    border-left: 1px solid lightgray;
+  }
+  
+  #nav-search-icon {
+    color: rgb(180, 180, 180);
+  }
+  
+  #direc {
+    flex: 2;
+    width: 134px;
+    display: flex;
+  }
+  
+  #sections {
+    flex: 4;
+    align-self: flex-end;
+    max-width: 800px;
+    display: flex;
+  }
+  
+  #user {
+    flex: 4;
+    align-self: flex-end;
+    text-align: end;
+  }
+  
+  input:focus {
+    outline: none !important;
+    border: 0px;
+  }
+  
+  .section {
+    font: 400 14px/22px "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica,
+      Roboto, Arial, sans-serif;
+    color: rgba(95, 95, 95, 0.699);
+  }
+  
+  .section:hover {
+    color: rgba(95, 95, 95, 0.925);
+  }
+  
+  .user-element + .user-element {
+    margin-left: 20px;
+  }
+  
+  .user-element {
+    font: 400 14px/22px "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica,
+      Roboto, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.733);
+  }
+  
+  .user-element:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  #direc-icon {
+    padding: 0px 5px;
+    font-size: 25px;
+    color: rgba(66, 66, 66, 0.767);
+    align-self: center;
+  }
+  
+  #direc-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: 400 14px/14px "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica,
+      Roboto, Arial, sans-serif;
+    color: rgba(95, 95, 95, 0.699);
+  }
+  
+  #direc-enviar {
+    font-size: 13px;
+  }
+  
+  #direc:hover #direc-loc {
+    font-weight: bold;
+  }
+  
+  #direc-loc {
+    color: rgb(0, 0, 0);
+  }
+  
+  #user-info {
+    align-content: center;
+  }
+  
+  .element-icon {
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+  }
+  
+  #user-icon {
+    padding-right: 2px;
+  }
+  
+  #carrito-icon {
+    margin-right: 25px;
+  }
+  
+  #categ-dropdown-cont {
+    padding: 20px 0px;
+    display: none;
+    position: absolute;
+    left: -100px;
+    background-color: black;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  #categ-dropdown-cont a {
+    color: #f9f9f9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #categ-dropdown-cont a:hover {
+    background-color: #286dd3;
+  }
+  
+  #categ-dropdown:hover #categ-dropdown-cont {
+    display: block;
+  }
+  
+  #categ-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-icon {
+    position: relative;
+    top: 2px;
+  }
+  
+  #user-dropdown-cont {
+    text-align: left;
+    padding: 20px 0px;
+    display: none;
+    position: absolute;
+    left: -120px;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  #user-dropdown-cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #user-dropdown-cont a:hover {
+    background-color: rgba(211, 211, 211, 0.178);
+  }
+  
+  #user-dropdown:hover #user-dropdown-cont {
+    display: block;
+  }
+  
+  #user-dropdown {
+    position: relative;
+  }
+  
+  #separator-cont {
+    margin: 10px 0px;
+  }
+  
+  .separator {
+    height: fit-content;
+    margin: 10px 0px;
+    border: solid rgba(216, 216, 216, 0.699);
+    border-width: 1px 0px 1px 0px;
+  }
+  
+  .separator.empty {
+    height: 0px;
+    border-top: none;
+  }
+  
+  .only-mobile {
+    visibility: hidden;
+    position: absolute;
+  }
