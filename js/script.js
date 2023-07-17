@@ -23,50 +23,13 @@ for (let i = 0; i < navElems.length; i++) {
 /**
  * search toggle
  */
+
 const searchContainer = document.querySelector("[data-search-wrapper]");
 const searchBtn = document.querySelector("[data-search-btn]");
-const productList = document.querySelectorAll(".top-product-item");
-const searchInput = document.querySelector("[data-search-input]");
 
 searchBtn.addEventListener("click", function () {
   searchContainer.classList.toggle("active");
 });
-
-const searchByInitial = function(initial) {
-  const initialLowerCase = initial.toLowerCase();
-
-  productList.forEach(product => {
-    const productName = product.querySelector(".card-content").textContent.toLowerCase().trim();
-
-    if (productName.charAt(0) === initialLowerCase) {
-      product.style.display = "block";
-    } else {
-      product.style.display = "none";
-    }
-  });
-};
-
-searchInput.addEventListener("input", function() {
-  const searchValue = searchInput.value.trim();
-
-  if (searchValue.length > 0) {
-    searchByInitial(searchValue.charAt(0));
-  } else {
-    productList.forEach(product => {
-      product.style.display = "block";
-    });
-  }
-});
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -128,10 +91,3 @@ for (let i = 0; i < productThumbnails.length; i++) {
 
   });
 }
-/************************* */
-const btnCart = document.querySelector('.container-icon')
-const containerCartProducts = document.querySelector('.container-cart-products')
-
-btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
-})
