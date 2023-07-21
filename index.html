@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOCTEZUMA</title>
+  <link rel="stylesheet" href="./shop.html">
+  <link rel="stylesheet" href="./cart.html">
 
   <!-- 
     - favicon
@@ -17,6 +19,7 @@
   -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./js/buscador.php">
   
 
   <!-- 
@@ -67,7 +70,7 @@
             </li>
 
             <li>
-              <a href="#offers-card" class="navbar-link">About</a>
+              <a href="#About" class="navbar-link">About</a>
             </li>
 
             <li>
@@ -79,7 +82,7 @@
             </li>
 
             <li>
-              <a href="#Producto" class="navbar-link">Products</a>
+              <a href="./shop.html" class="navbar-link">Products</a>
             </li>
 
             <li>
@@ -93,32 +96,24 @@
         <div class="header-action">
           <div class="search-wrapper" data-search-wrapper>
 
-            <button class="header-action-btn" aria-label="Toggle search" data-search-btn>
-              <ion-icon name="search-outline" class="search-icon"></ion-icon>
-              <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            <button class="" aria-label="" data-search-btn>
+              <ion-icon name="" class=""></ion-icon>
+              <ion-icon name="" class=""></ion-icon>
             </button>
 
             <div class="input-wrapper">
-              <input type="search" name="search" placeholder="Search here" class="search-input">
-
-              <button class="search-submit" aria-label="Submit search">
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
+              
             </div>
 
           </div>
 
-          <button class="header-action-btn" aria-label="Open whishlist" data-panel-btn="whishlist">
-            <ion-icon name="heart-outline"></ion-icon>
 
-            
-          </button>
 
-          <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
-            <ion-icon name="basket-outline"></ion-icon>
-          </button>
 
         </div>
+
+
+
 
       </div>
     </div>
@@ -285,50 +280,8 @@
 
           <ul class="grid-list">
 
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/25302541/r/il/80bb5e/4350901612/il_794xN.4350901612_63l1.jpg" width="189" height="189" loading="lazy" alt="Fresh Orangey">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html"> Carrusel con caballos, Made in Germany</a>
-                </h3>
-
-                <div class="price-wrapper">
-                 
-
-                  <data class="price" value="85.00">$95.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
+            <ul id="productList"></ul>
+         
             <li>
               <div class="product-card">
 
@@ -359,7 +312,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">Lavado ANTIGUO</a>
+                  <a href="./shop.html">Lavado ANTIGUO</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -368,7 +321,6 @@
                   <data class="price" value="85.00">$105.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
 
               </div>
             </li>
@@ -404,7 +356,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">ZOOTROPO. El origen del Gif animado.</a>
+                  <a href="./shop.html">ZOOTROPO. El origen del Gif animado.</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -413,7 +365,6 @@
                   <data class="price" value="85.00">$200.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
 
               </div>
             </li>
@@ -448,7 +399,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">Maleta de viaje para niños vintage</a>
+                  <a href="./shop.html">Maleta de viaje para niños vintage</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -457,7 +408,6 @@
                   <data class="price" value="85.00">$35.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
 
               </div>
             </li>
@@ -493,7 +443,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">RARE Vintage 1948-50 ZONA DE EE.UU</a>
+                  <a href="./shop.html">RARE Vintage 1948-50 ZONA DE EE.UU</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -502,7 +452,6 @@
                   <data class="price" value="85.00">$85.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
 
               </div>
             </li>
@@ -537,7 +486,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">Tres Trompos</a>
+                  <a href="./shop.html">Tres Trompos</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -546,7 +495,7 @@
                   <data class="price" value="85.00">$55.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
+                
 
               </div>
             </li>
@@ -562,13 +511,11 @@
                     <button class="product-btn" aria-label="Add to Whishlist">
                       <ion-icon name="heart-outline"></ion-icon>
 
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
+                  
 
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
+                    
 
-                      <div class="tooltip">Quick View</div>
+                      
                     </button>
                   </div>
                 </figure>
@@ -582,7 +529,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">Planet Robot Tin Toy Robby the Robot Forbidden</a>
+                  <a href="./shop.html">Planet Robot Tin Toy Robby the Robot Forbidden</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -591,7 +538,6 @@
                   <data class="price" value="85.00">$105.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
 
               </div>
             </li>
@@ -613,7 +559,7 @@
                     <button class="product-btn" aria-label="Quick View">
                       <ion-icon name="eye-outline"></ion-icon>
 
-                      <div class="tooltip">Quick View</div>
+                    
                     </button>
                   </div>
                 </figure>
@@ -627,7 +573,7 @@
                 </div>
 
                 <h3 class="h4 card-title">
-                  <a href="./product-details.html">Juego de Té</a>
+                  <a href="./shop.html">Juego de Té</a>
                 </h3>
 
                 <div class="price-wrapper">
@@ -635,7 +581,7 @@
                   <data class="price" value="85.00">$85.00</data>
                 </div>
 
-                <button class="btn btn-primary">Add to Cart</button>
+               
 
               </div>
             </li>
@@ -1201,6 +1147,7 @@
       -->
 
       <section class="section testimonials">
+        <div id="About">
         <div class="container">
 
           <p class="section-subtitle"> -- Algunos terminos --</p>
@@ -1315,6 +1262,7 @@
 
           </ul>
 
+        </div>
         </div>
       </section>
 
@@ -1682,6 +1630,8 @@
   <script src="./js/script.js"></script>
   <script src="./js/buscador.js"></script>
   <script src="./js/cart.js"></script>
+  <script src="./js//data_pro.js"></script>
+
  
 
   <!-- 

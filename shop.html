@@ -1,890 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOCTEZUMA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/af/96/19/af9619e41c4b072d7c6cb25c2ca32ca4.jpg" type="image/svg+xml">
+</head>
+<body>
+  <!--buscdos-->
+  <style>
+    /* Estilos para los resultados de búsqueda */
+    .div-flotante {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 300px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .titu {
+      color: #57b134;
+      margin-bottom: 5px;
+    }
+
+    .imagen {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .caj_inf {
+      margin-top: 5px;
+    }
+
+    .caj_inf p {
+      margin: 0;
+    }
+
+    /* Estilos para el mensaje de no existencia */
+    .div-no-existencia {
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #888;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    .mensajee {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido del buscador y resultados -->
+  <div class="caja1"></div>
+  <div id="resultado"></div>
 
 
-      <!-- 
-        - #OFFERS
-      -->
+  <!--Aqui comienza-->
 
-      <section class="section offers">
-        <div class="container">
+  <div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">MOCTEZUMA</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+          <h1 class="logo"><a href="./index.html">MOCTEZUMA</a></h1>
 
-          <ul class="offers-list has-scrollbar">
-
-            <li class="offers-item">
-              <a href="./shop.html" class="offers-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.pinimg.com/564x/26/95/dc/2695dc14e0ac63e4643a7c23d0c91a0c.jpg" width="292" height="230" loading="lazy"
-                    alt="Fresh vegetables package" class="w-100">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Buen Día</p>
-
-                  <h3 class="h3 card-title">Estamos a la Orden .</h3>
-
-                  
-                </div>
-
-              </a>
-            </li>
-
-            <li class="offers-item">
-              <a href="" class="offers-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.pinimg.com/564x/1e/2b/77/1e2b776ae1adc6da1df89ba16d1deb49.jpg" width="336" height="244" loading="lazy"
-                    alt="Healthy & fresh beef" class="w-100">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Bienvenidos</p>
-
-                  <h3 class="h3 card-title">La sonrisa es una bienvenida universal.</h3>
-
-                  
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                </li>
+                <li>
+                    <button id="tapitas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Tapitas</button>
+                </li>
+                <li>
+                    <button id="carros" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Carros</button>
+                </li>
+                <li>
+                    <button id="he-man" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> He-man</button>
+                </li>
+                <li>
+                    <a class="boton-menu boton-carrito" href="./cart.html">
+                        <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2023 Moctezuma</p>
+        </footer>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/menu.js"></script>
+            <script src="./js/buscador.js"></script>
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PRODUCT
-      -->
-      <div id="Producto">
-      <section class="section product">
-        <div class="container">
-
-          <p class="section-subtitle"> -- Moctezuma Toys --</p>
-
-          <h2 class="h2 section-title">Todos Nuestros Productos</h2>
-
-          <ul class="filter-list">
-
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/25302541/r/il/80bb5e/4350901612/il_794xN.4350901612_63l1.jpg" width="189" height="189" loading="lazy" alt="Fresh Orangey">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html"> Carrusel con caballos, Made in Germany</a>
-                </h3>
-
-                <div class="price-wrapper">
-                 
-
-                  <data class="price" value="85.00">$95.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/15363173/r/il/b88ebb/5079695610/il_794xN.5079695610_844q.jpg" width="189" height="189" loading="lazy" alt="key Lime">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">Lavado ANTIGUO</a>
-                </h3>
-
-                <div class="price-wrapper">
-                  
-
-                  <data class="price" value="85.00">$105.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/25900084/r/il/2b01e9/3028036610/il_794xN.3028036610_nvgt.jpg" width="189" height="189" loading="lazy"
-                    alt="Fresh Watermelon">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">ZOOTROPO. El origen del Gif animado.</a>
-                </h3>
-
-                <div class="price-wrapper">
-                
-
-                  <data class="price" value="85.00">$200.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/5242358/r/il/5001e5/3928052631/il_794xN.3928052631_1ya1.jpg" width="189" height="189" loading="lazy" alt="Visual matches">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">Maleta de viaje para niños vintage</a>
-                </h3>
-
-                <div class="price-wrapper">
-                  
-
-                  <data class="price" value="85.00">$35.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/8797736/r/il/a434fa/3507971156/il_794xN.3507971156_bf2m.jpg" width="189" height="189" loading="lazy"
-                    alt="Pomagranate Fruit">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">RARE Vintage 1948-50 ZONA DE EE.UU</a>
-                </h3>
-
-                <div class="price-wrapper">
-                  <del class="del">$75.00</del>
-
-                  <data class="price" value="85.00">$85.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/21262066/r/il/d1bed6/3835513991/il_794xN.3835513991_spnk.jpg" width="189" height="189" loading="lazy" alt="Red onion">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">Tres Trompos</a>
-                </h3>
-
-                <div class="price-wrapper">
-               
-
-                  <data class="price" value="85.00">$55.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/31945761/r/il/1af6a0/4321705201/il_794xN.4321705201_ojcf.jpg" width="189" height="189" loading="lazy"
-                    alt="Lens Results Broccoli">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">Planet Robot Tin Toy Robby the Robot Forbidden</a>
-                </h3>
-
-                <div class="price-wrapper">
-                  
-
-                  <data class="price" value="85.00">$105.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/6136564/r/il/d25b12/4568811738/il_794xN.4568811738_ff16.jpg" width="189" height="189" loading="lazy"
-                    alt="Lens Results Spinach">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">
-                  <a href="./product-details.html">Juego de Té</a>
-                </h3>
-
-                <div class="price-wrapper">
-                  
-                  <data class="price" value="85.00">$85.00</data>
-                </div>
-
-                <button class="btn btn-primary">Add to Cart</button>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-      </div>
-      <!-- 
-        - #TOP PRODUCT
-      -->
-
-      <section class="section top-product">
-        <div class="container">
-
-          <p class="section-subtitle"> -- Stoys Antiguos --</p>
-
-          <h2 class="h2 section-title">Productos En Rebaja</h2>
-
-          <ul class="top-product-list grid-list">
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/15363173/r/il/33980d/4552632222/il_794xN.4552632222_sv1s.jpg" width="100" height="100" loading="lazy"
-                    alt="Fresh Orangey">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Muñeca japonesa en porcelan</a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$105.00</del>
-
-                    <data class="price" value="85.00">$61.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/25302541/r/il/ee785b/3811820498/il_794xN.3811820498_e3c7.jpg"" width="100" height="100" loading="lazy" alt="key Lime">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Juguetes de hojalata</a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$60.00</del>
-
-                    <data class="price" value="85.00">$51.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/31619984/r/il/3cab69/4999908168/il_794xN.4999908168_hi2b.jpg"" width="100" height="100" loading="lazy"
-                    alt="Fresh Watermelon">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Gato giratorio </a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$105.00</del>
-
-                    <data class="price" value="85.00">$63.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/35299939/r/il/a2ca6d/4149920281/il_794xN.4149920281_as9e.jpg" width="100" height="100" loading="lazy" alt="Stobery">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Robots, lámparas de escritorio</a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$83.00</del>
-
-                    <data class="price" value="85.00">$56.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/31945761/r/il/771bce/4238561259/il_794xN.4238561259_lzu7.jpg" width="100" height="100" loading="lazy"
-                    alt="Pomagranate Fruit">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Mars Quest Flying Saucer Tin Toy</a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$100.00</del>
-
-                    <data class="price" value="85.00">$72.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/15220114/r/il/552b61/1978125291/il_794xN.1978125291_bsq0.jpg" width="100" height="100" loading="lazy"
-                    alt="Lens Results Broccoli">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Juguete raro chapa vieja 1960  </a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$65.00</del>
-
-                    <data class="price" value="85.00">$35.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/7775923/r/il/6a46ef/848715575/il_794xN.848715575_phnq.jpg" width="100" height="100" loading="lazy"
-                    alt="Lens Results Spinach">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Astronauta con estación espacial y cámara </a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$77.00</del>
-
-                    <data class="price" value="85.00">$55.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/22329842/r/il/27d0de/4543873846/il_794xN.4543873846_g5mt.jpg" width="100" height="100" loading="lazy"
-                    alt="Lorigun Artificial">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Estufa infantil antigua 1900 con sartenes</a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$300.00</del>
-
-                    <data class="price" value="85.00">$95.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="top-product-item">
-              <div class="product-card top-product-card">
-
-                <figure class="card-banner">
-                  <img src="https://i.etsystatic.com/18445460/r/il/810ab1/5009838100/il_794xN.5009838100_fs1l.jpg" width="100" height="100" loading="lazy"
-                    alt="Leaf lettuce">
-
-                  <div class="btn-wrapper">
-                    <button class="product-btn" aria-label="Add to Whishlist">
-                      <ion-icon name="heart-outline"></ion-icon>
-
-                      <div class="tooltip">Add to Whishlist</div>
-                    </button>
-
-                    <button class="product-btn" aria-label="Quick View">
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                      <div class="tooltip">Quick View</div>
-                    </button>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <h3 class="h4 card-title">
-                    <a href="./product-details.html">Coche de policía</a>
-                  </h3>
-
-                  <div class="price-wrapper">
-                    <del class="del">$65.00</del>
-
-                    <data class="price" value="105.00">$85.00</data>
-                  </div>
-
-                  <button class="btn btn-primary">Add to Cart</button>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+    </main>
+</div>
+
+    
+</body>
+</html>

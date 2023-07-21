@@ -1,4 +1,4 @@
-const catalogo_completo = [
+[
     {
         "id": "Tapitas-01",
         "titulo": "Tapitas de botella pepsi",
@@ -134,7 +134,7 @@ const catalogo_completo = [
         "titulo": "Skeletor y Panthor - Masters Of The Universe -",
         "imagen": "https://i.etsystatic.com/19857949/r/il/6dad68/3495028200/il_794xN.3495028200_kf8u.jpg",
         "categoria": {
-            "nombre": "He-man",
+            "nombre": "Pantalones",
             "id": "he-man"
         },
         "precio": 550
@@ -144,7 +144,7 @@ const catalogo_completo = [
         "titulo": "He-man",
         "imagen": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2019/07/heman-skeletor-filmation-super-7-motuc-eslr-toys-preventa-d-nq-np-980635-mlm28480900877-102018-f.jpg",
         "categoria": {
-            "nombre": "He-man",
+            "nombre": "Pantalones",
             "id": "he-man"
         },
         "precio": 300
@@ -154,7 +154,7 @@ const catalogo_completo = [
         "titulo": "Orko",
         "imagen": "https://www.ansaldo.cl/wp-content/uploads/2021/08/24567.jpg",
         "categoria": {
-            "nombre": "He-man",
+            "nombre": "Pantalones",
             "id": "he-man"
         },
         "precio": 600
@@ -164,7 +164,7 @@ const catalogo_completo = [
         "titulo": "Battle cat",
         "imagen": "https://shopping.mattel.com/cdn/shop/products/og6c9bd3p3sshg032ezw.jpg?v=1689322217",
         "categoria": {
-            "nombre": "He-man",
+            "nombre": "Pantalones",
             "id": "he-man"
         },
         "precio": 455
@@ -174,102 +174,9 @@ const catalogo_completo = [
         "titulo": "Tigre",
         "imagen": "https://http2.mlstatic.com/D_NQ_NP_750991-MLM46032688673_052021-O.webp",
         "categoria": {
-            "nombre": "He-man",
+            "nombre": "Pantalones",
             "id": "he-man"
         },
         "precio": 300
     }
-];
-
-  /* Contenido de html para el buscador */
-  let contenido_busqueda = `
-    <div class="busqueda">
-      <input type="text" id="searchInput" placeholder="Buscar">
-      <button id="reiniciarBtn">Borrar</button>
-    </div>     
-   
-  `;
-
-  /* Se llama a la clase de la etiqueta para agregar el contenido del buscador */
-  let busque = document.querySelector(".caja1");
-  busque.innerHTML = contenido_busqueda;
-
-  function buscarJuguetes() {
-    // Obtiene el valor del campo de búsqueda
-    let input = document.getElementById('searchInput');
-    let consulta = input.value.toLowerCase();
-
-    // Obtiene el contenedor para mostrar los resultados de búsqueda
-    let divResultado = document.getElementById('resultado');
-    divResultado.textContent = '';
-
-    // Filtra los juguetes que coinciden con la consulta de búsqueda
-    let juguetesCoincidentes = catalogo_completo.filter(juguete => juguete.titulo.toLowerCase().includes(consulta));
-
-    if (juguetesCoincidentes.length > 0) {
-      // Mostrar los juguetes coincidentes
-      juguetesCoincidentes.forEach(juguete => {
-        let div = document.createElement('div');
-        div.className = 'div-flotante';
-        div.innerHTML = `
-          <h3 class="titu">${juguete.titulo}</h3>
-          <div class="caja_column">
-            <img class="imagen" src="${juguete.imagen}" alt="Imagen del juguete">
-            <div class="caj_inf">
-              <p>• Categoría: ${juguete.categoria.nombre}</p>
-              <p>• Precio: ${juguete.precio}</p>
-            </div>
-          </div>
-        `;
-        divResultado.appendChild(div);
-      });
-
-      // Ocultar elementos adicionales (si es necesario)
-      // ...
-
-    } else {
-      // Mostrar mensaje de no existencia
-      let divNoExistencia = document.createElement('div');
-      divNoExistencia.className = 'div-no-existencia';
-
-      let mensajeNoExistencia = document.createElement('p');
-      mensajeNoExistencia.className = 'mensajee';
-      mensajeNoExistencia.textContent = '¡Ups! Lamento informarte que el juguete no está en existencia en estos momentos.';
-
-      divNoExistencia.appendChild(mensajeNoExistencia);
-      divResultado.appendChild(divNoExistencia);
-
-      // Ocultar elementos adicionales (si es necesario)
-      // ...
-    }
-  }
-
-  // Agregar evento de búsqueda al campo de entrada
-  let input = document.getElementById('searchInput');
-  input.addEventListener('input', buscarJuguetes);
-
-  // Obtener referencia al botón de reinicio
-  let reiniciarBtn = document.getElementById('reiniciarBtn');
-
-  // Agregar evento de clic al botón de reinicio
-  reiniciarBtn.addEventListener('click', () => {
-    // Reiniciar la página
-    location.reload();
-  });
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  
+]
